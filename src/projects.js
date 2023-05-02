@@ -2,26 +2,33 @@
 
 const projects = [
     {
-        title: 'Project title!',
-        blurb: 'Further information about the project',
-        image: 'portfolio-project.png',
-        GitHubRef: 'https://www.kierenmcgill.co.uk',
-        URL: ''
+        title: 'Portfolio Website',
+        blurb: "You're already here! A portfolio website built using Bootstrap and a bit of React.",
+        image: 'portfolio_project.png',
+        GitHubRef: '#',
+        URL: 'https://www.kierenmcgill.co.uk'
     },
     {
-        title: 'Project title',
+        title: 'Coming Soon...',
         blurb: 'Further information about the project',
-        image: 'portfolio-pic.png',
-        GitHubRef: '',
-        URL: ''
+        image: 'portfolio_project.png',
+        GitHubRef: '#',
+        URL: '#'
     },
     {
-        title: 'Project title',
+        title: 'Coming Soon...',
         blurb: 'Further information about the project',
-        image: 'portfolio-pic.png',
-        GitHubRef: '',
-        URL: ''
+        image: 'portfolio_project.png',
+        GitHubRef: '#',
+        URL: '#'
     },
+    {
+        title: 'Coming Soon...',
+        blurb: 'Further information about the project',
+        image: 'portfolio_project.png',
+        GitHubRef: '#',
+        URL: '#'
+    }
 ]
 
 export default projects
