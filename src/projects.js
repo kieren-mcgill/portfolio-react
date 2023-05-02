@@ -2,25 +2,25 @@
 
 const projects = [
     {
-        title: 'Project title',
+        title: 'Project title!',
         blurb: 'Further information about the project',
-        image: 'portfolio-pic.png',
-        GitHubRef: '',
-        GitHubPagesRef: ''
+        image: 'portfolio-project.png',
+        GitHubRef: 'https://www.kierenmcgill.co.uk',
+        URL: ''
     },
     {
         title: 'Project title',
         blurb: 'Further information about the project',
         image: 'portfolio-pic.png',
         GitHubRef: '',
-        GitHubPagesRef: ''
+        URL: ''
     },
     {
         title: 'Project title',
         blurb: 'Further information about the project',
         image: 'portfolio-pic.png',
         GitHubRef: '',
-        GitHubPagesRef: ''
+        URL: ''
     },
 ]
 
