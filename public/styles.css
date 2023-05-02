@@ -2,7 +2,7 @@
 body {
     background-image: url("./images/nodes-background.jpg");
     background-attachment: fixed;
-    color: #212529;
+    color: #002B5B;
     margin: 0;
 }
 
@@ -15,10 +15,20 @@ a {
     text-decoration: none;
 }
 
-.nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.red-el {
+    color: #EA5455;
+}
+
+.blue-el {
+    color: #087EA4;
+}
+
+.red-under {
+    border-bottom: #EA5455 solid 3px;
+}
+
+.navbar {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-brand {
@@ -26,18 +36,22 @@ a {
 }
 
 .head-icon {
-    border: #212529 solid 1px;
+    border: #EA5455 solid 2px;
     border-radius: 50%;
 }
 
 .navbar-collapse {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .navbar-toggler {
     border: none;
     border-radius: 0;
+}
+
+.nav-link-right {
+    border-left: #EA5455 solid 2px;
 }
 
 section {
@@ -52,7 +66,6 @@ section {
     flex-direction: column;
     justify-content: flex-end;
     justify-self: flex-end;
-    margin-bottom: 66px;
 }
 
 .blinking-dots div {
@@ -78,14 +91,14 @@ section {
 
 @keyframes blink {
     0% {
-        background-color: rgba(33, 37, 41, 0.2);
+        background-color: rgba(234, 84, 85, 0.2);
     }
     20% {
-        background-color: rgba(33, 37, 41, 1);
+        background-color: rgba(234, 84, 85, 1);
         transform: scale(1.2);
     }
     100% {
-        background-color: rgba(33, 37, 41, 0.2);
+        background-color: rgba(234, 84, 85, 0.2);
     }
 }
 
@@ -95,27 +108,33 @@ section {
     height: 25vh;
 }
 
+.about-para {
+    background-color: #f8f9fa;
+    border-start-end-radius: 52px;
+
+}
+
 .km-portrait {
-    height: 120px;
+    height: 150px;
     aspect-ratio: 1 / 1;
-    padding: 10px 10px 0 0;
+    padding: 5px 5px 0 0;
     border-start-end-radius: 35%;
     border-end-start-radius: 35%;
+    border-top: #EA5455 solid 3px;
+    border-right: #EA5455 solid 3px;
     float: right;
     top: 0;
     right: 0;
-    margin-left: 10px;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: -32px -32px 0 10px;
 }
 
 .skills {
     font-size: 0.8rem;
+
+}
+
+.skills .row {
+    background-color: #f8f9fa;
 }
 
 .skills i {
@@ -124,6 +143,12 @@ section {
 
 .card {
     width: 20rem;
+    border-radius: 0;
+}
+
+.card-img-top {
+    height: 13rem;
+    object-fit: cover;
 }
 
 footer {

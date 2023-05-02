@@ -8,27 +8,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css"/>
-    <script src="index.js" defer></script>
+    <script src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/8f39fc9c95.js" crossorigin="anonymous"></script>
     <title>Kieren McGill</title>
 </head>
 <body>
-<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid nav-container">
+<nav class="navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid nav-container d-flex justify-content-between">
         <a class="navbar-brand" href="#">
-            <img src="./images/KM-icon.png" alt="icon of bald man" width="40" class="me-3 head-icon"/>Kieren
-            McGill
+            <img src="./images/neural-network.png" alt="icon of a neural network" width="40"
+                 class="me-3 p-1 head-icon"/>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navLinks">
-            <div class="navbar-nav">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
-            </div>
+        <div class="d-flex">
+            <a class="nav-link px-2" href="#about">ABOUT</a>
+            <a class="nav-link nav-link-right px-2" href="#projects">PROJECTS</a>
+            <a class="nav-link nav-link-right px-2" href="#contact">CONTACT</a>
         </div>
     </div>
 </nav>
@@ -36,85 +30,98 @@
     <section id="landing-section" class="d-flex flex-column justify-content-between">
         <div></div>
         <div class="greeting">
-            <h1 class="pb-3 text-center display-2" id="greet-el"></h1>
-            <h1 class="pb-3 text-center display-5">My name is Kieren.</h1>
-            <p class="text-center">I'm a junior full-stack developer based in Sheffield, UK.</p>
+            <h1 class="pb-3 px-2 text-center display-1 greet-el" id="greet-el"></h1>
+            <h1 class="pb-3 px-2 text-center display-4 red-el">
+                <strong>I'm Kieren McGill.</strong>
+            </h1>
+            <p class="text-center px-2"><strong>I'm a junior full-stack developer based in Sheffield, UK.</strong></p>
         </div>
         <div class="blinking-dots">
-            <p><strong>find out more</strong></p>
+            <p>FIND OUT MORE</p>
             <div class="blink-1 mb-2"></div>
             <div class="blink-2 mb-2"></div>
             <div class="blink-3 mb-2"></div>
         </div>
     </section>
-    <div class="section-divider"></div>
+    <div id="animation" class="section-divider"></div>
     <section id="about" class="pt-5 d-flex flex-column justify-content-between">
         <div>
-            <h3 class="m-5">About me</h3>
-            <p class="mx-5">
-                <img class="km-portrait" src="images/km-portrait.jpg" alt="A portrait photo of Kieren McGill"/>
-                As an experienced educator with a successful career, I have honed my leadership and teamwork skills
-                to
-                deliver
-                exceptional results. However, I now seek to embark on a new journey in software and web development.
-                I
-                am
-                excited to apply my problem-solving and critical thinking skills to create innovative solutions that
-                will
-                positively impact people's lives. With determination and a growth mindset, I am committed to
-                mastering
-                new
-                programming languages and staying up-to-date with emerging technologies. I am confident that my
-                background
-                in
-                education and passion for technology will enable me to thrive in this field and make a meaningful
-                contribution
-                to the industry.
-            </p>
+            <h3 class="m-5 text-center pb-2">A<span class="pb-2 red-under">BOUT M</span>E</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 mx-4">
+                        <p class="p-4 about-para">
+                            <img class="km-portrait" src="images/km-portrait.jpg"
+                                 alt="A portrait photo of Kieren McGill"/>
+                            I'm a junior full-stack developer, currently living in Sheffield, UK. I was a teacher for
+                            quite a while,
+                            working in schools around the world, including the UK, Thailand and China. And I was good at
+                            it too,
+                            holding various leadership positions and training colleagues in good practice.<br>
+                            But I can't resist a challenge, so I switched careers and retrained as a developer. I love
+                            to solve
+                            problems and build things that exceed users' needs. So get in contact and maybe we can build
+                            something together.
+                        </p>
+                        <div class="d-flex">
+                            <h3>CV</h3>
+                            <a href="" target="_blank" rel="noopener noreferrer" class="cv-icon pt-1">
+                                <i class="fa-solid fa-download fa-lg action-btn mx-2 blue-el"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div>
-            <h3 class="m-5">Skills</h3>
-            <div class="skills container-fluid">
-                <div class="row">
-                    <div class="col col-md-3">
-                        <p><i class="fa-brands fa-html5 fa-lg"></i></p>
-                        <p>HTML</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-brands fa-css3-alt fa-lg"></i></p>
-                        <p>CSS</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-brands fa-square-js fa-lg"></i></p>
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-3">
-                        <p><i class="fa-brands fa-react fa-lg"></i></p>
-                        <p>React</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-solid fa-terminal"></i></p>
-                        <p>Command line</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-solid fa-people-group"></i></p>
-                        <p>Scrum</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-md-3">
-                        <p><i class="fa-regular fa-comments"></i></p>
-                        <p>Communication</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-solid fa-code-branch fa-lg"></i></p>
-                        <p>Git</p>
-                    </div>
-                    <div class="col col-md-3">
-                        <p><i class="fa-brands fa-github fa-lg"></i></p>
-                        <p>GitHub</p>
+            <h3 class="m-5 text-center">S<span class="pb-2 red-under">KILL</span>S</h3>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 m-4 mb-5">
+                        <div class="skills container">
+                            <div class="row justify-content-center p-4">
+                                <div class="col text-center pt-4">
+                                    <p><i class="fa-brands fa-html5 fa-lg blue-el"></i></p>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="col text-center pt-4">
+                                    <p><i class="fa-brands fa-css3-alt fa-lg blue-el"></i></p>
+                                    <p>CSS</p>
+                                </div>
+                                <div class="col text-center pt-4">
+                                    <p><i class="fa-brands fa-square-js fa-lg blue-el"></i></p>
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center p-4">
+                                <div class="col text-center">
+                                    <p><i class="fa-brands fa-react fa-lg blue-el"></i></p>
+                                    <p>React</p>
+                                </div>
+                                <div class="col text-center">
+                                    <p><i class="fa-solid fa-terminal blue-el"></i></p>
+                                    <p>Command line</p>
+                                </div>
+                                <div class="col text-center">
+                                    <p><i class="fa-solid fa-people-group blue-el"></i></p>
+                                    <p>Scrum</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center p-4">
+                                <div class="col text-center">
+                                    <p><i class="fa-regular fa-comments blue-el"></i></p>
+                                    <p>Communication</p>
+                                </div>
+                                <div class="col text-center">
+                                    <p><i class="fa-solid fa-code-branch fa-lg blue-el"></i></p>
+                                    <p>Git</p>
+                                </div>
+                                <div class="col text-center">
+                                    <p><i class="fa-brands fa-github fa-lg blue-el"></i></p>
+                                    <p>GitHub</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--            <div class="row">-->
@@ -132,42 +139,32 @@
                 <!--                </div>-->
             </div>
         </div>
-        <div class="d-flex m-5">
-            <h3>Here's my CV...
-                <a href="" target="_blank" rel="noopener noreferrer" class="cv-icon">
-                    <i class="fa-solid fa-download action-btn mx-2"></i>
-                </a>
-            </h3>
-        </div>
     </section>
     <div class="section-divider"></div>
     <section id="projects" class="pt-5">
-        <h3 class="m-5">Projects</h3>
-        <div class="m-5 d-flex justify-content-start flex-wrap flex-direction-row">
-            <!--      React project section-->
-            <div id="project-cards"></div>
-        </div>
+        <h3 class="m-5 text-center">P<span class="red-under">ROJECT</span>S</h3>
+        <div id="project-cards" class="m-5 d-flex flex-row flex-wrap"></div>
     </section>
     <div class="section-divider"></div>
     <section id="contact" class="pt-5 d-flex flex-column justify-content-between">
         <h3 class="m-5">Contact</h3>
         <div class="contact-info d-flex flex-column mx-5">
             <div class="m-2">
-                <i class="fa-solid fa-mobile-screen fa-xl ms-1"></i><span> : +44(0)7542 699 439</span>
+                <i class="fa-solid fa-mobile-screen fa-xl ms-1 red-el"></i><span> : +44(0)7542 699 439</span>
             </div>
             <div class="m-2">
                 <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-regular fa-envelope fa-xl action-btn"></i><span> : kacmcgill@gmail.com</span>
+                    <i class="fa-regular fa-envelope fa-xl action-btn red-el"></i><span> : kacmcgill@gmail.com</span>
                 </a>
             </div>
             <div class="m-2">
                 <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin fa-xl action-btn"></i><span> : linkedin.com/in/kacmcgill</span>
+                    <i class="fa-brands fa-linkedin fa-xl action-btn red-el"></i><span> : linkedin.com/in/kacmcgill</span>
                 </a>
             </div>
             <div class="m-2">
                 <a href="https://twitter.com/KierenMcGill" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-twitter fa-xl action-btn"></i><span> : @KierenMcGill</span>
+                    <i class="fa-brands fa-twitter fa-xl action-btn red-el"></i><span> : @KierenMcGill</span>
                 </a>
             </div>
         </div>
@@ -180,6 +177,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#landing-section",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xEA5455,
+            backgroundColor: 0xEBEBEB,
+            points: 11.00,
+            maxDistance: 17.00,
+            spacing: 13.00,
+            showDots: false
+        })
+    </script>
 </main>
 </body>
 </html>
