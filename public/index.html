@@ -65,7 +65,7 @@
                         </p>
                         <div class="d-flex">
                             <h3>CV</h3>
-                            <a href="" target="_blank" rel="noopener noreferrer" class="cv-icon pt-1">
+                            <a href="K_McGill_CV_23.pdf" target="_blank" rel="noopener noreferrer" class="cv-icon pt-1">
                                 <i class="fa-solid fa-download fa-lg action-btn mx-2 blue-el"></i>
                             </a>
                         </div>
@@ -107,7 +107,7 @@
                                     <p>Scrum</p>
                                 </div>
                             </div>
-                            <div class="row justify-content-center p-4">
+                            <div class="row justify-content-center p-4 mb-5">
                                 <div class="col text-center">
                                     <p><i class="fa-regular fa-comments blue-el"></i></p>
                                     <p>Communication</p>
@@ -143,32 +143,63 @@
     <div class="section-divider"></div>
     <section id="projects" class="pt-5">
         <h3 class="m-5 text-center">P<span class="red-under">ROJECT</span>S</h3>
-        <div id="project-cards" class="m-5 d-flex flex-row flex-wrap"></div>
+        <div id="project-cards" class="m-5 d-flex flex-wrap justify-content-center"></div>
     </section>
     <div class="section-divider"></div>
-    <section id="contact" class="pt-5 d-flex flex-column justify-content-between">
-        <h3 class="m-5">Contact</h3>
-        <div class="contact-info d-flex flex-column mx-5">
-            <div class="m-2">
-                <i class="fa-solid fa-mobile-screen fa-xl ms-1 red-el"></i><span> : +44(0)7542 699 439</span>
-            </div>
-            <div class="m-2">
-                <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-regular fa-envelope fa-xl action-btn red-el"></i><span> : kacmcgill@gmail.com</span>
-                </a>
-            </div>
-            <div class="m-2">
-                <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin fa-xl action-btn red-el"></i><span> : linkedin.com/in/kacmcgill</span>
-                </a>
-            </div>
-            <div class="m-2">
-                <a href="https://twitter.com/KierenMcGill" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-twitter fa-xl action-btn red-el"></i><span> : @KierenMcGill</span>
-                </a>
+    <section id="contact" class="pt-5 d-flex flex-column justify-content-between align-items-center">
+        <h3 class="m-5 text-center">C<span class="red-under">ONTAC</span>T</h3>
+        <div class="container m-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 col-md-6 contact-info d-flex flex-column mb-5 mt-1">
+                    <div class="m-2">
+                        <i class="fa-solid fa-mobile-screen fa-xl ms-1 blue-el"></i><span> : +44(0)7542 699 439</span>
+                    </div>
+                    <div class="m-2">
+                        <a href="mailto:kacmcgill@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-regular fa-envelope fa-xl action-btn blue-el"></i><span> : kacmcgill@gmail.com</span>
+                        </a>
+                    </div>
+                    <div class="m-2">
+                        <a href="https://linkedin.com/in/kieren-mcgill-b88a14179" target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin fa-xl action-btn blue-el"></i><span> : linkedin.com/in/kacmcgill</span>
+                        </a>
+                    </div>
+                    <div class="m-2">
+                        <a href="https://twitter.com/KierenMcGill" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-twitter fa-xl action-btn blue-el"></i><span> : @KierenMcGill</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6">
+                    <form action="https://formspree.io/f/mpzebdoo" method="POST">
+                        <div class="form-group mb-3">
+                            <label for="sender-name">Your name</label>
+                            <input type="text" class="form-control" id="sender-name" placeholder="Enter full name">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="sender-email">Email address</label>
+                            <input type="email"
+                                   class="form-control"
+                                   id="sender-email"
+                                   placeholder="Enter email" />
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="sender-message">Your message</label>
+                            <textarea class="form-control"
+                                      id="sender-message"
+                                      placeholder="Enter message"
+                                      rows="3">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn">
+                            <i class="fa-regular fa-paper-plane fa-2xl blue-el"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
-        <footer class="d-flex align-items-center justify-content-center">
+        <footer class="d-flex align-items-center justify-content-center w-100">
             <small>
                 Kieren McGill, <span id="current-year"></span>
             </small>
