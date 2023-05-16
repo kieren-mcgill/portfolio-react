@@ -175,19 +175,28 @@
                     <form action="https://formspree.io/f/mpzebdoo" method="POST">
                         <div class="form-group mb-3">
                             <label for="sender-name">Your name</label>
-                            <input type="text" class="form-control" id="sender-name" placeholder="Enter full name">
+                            <input type="text"
+                                   class="form-control"
+                                   id="sender-name"
+                                   name="sender-name"
+                                   required
+                                   placeholder="Enter full name">
                         </div>
                         <div class="form-group mb-3">
                             <label for="sender-email">Email address</label>
                             <input type="email"
                                    class="form-control"
                                    id="sender-email"
+                                   name="sender-email"
+                                   required
                                    placeholder="Enter email" />
                         </div>
                         <div class="form-group mb-3">
                             <label for="sender-message">Your message</label>
                             <textarea class="form-control"
                                       id="sender-message"
+                                      name="sender-message"
+                                      required
                                       placeholder="Enter message"
                                       rows="3">
                             </textarea>
