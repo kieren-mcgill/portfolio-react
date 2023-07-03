@@ -25,6 +25,14 @@ const projects = [
         GitHubBack: '',
         Url: 'https://sprightly-treacle-84dd73.netlify.app'
     },
+    {
+      title: 'Robo Report',
+      blurb: "A MERN stack web app utilising the OpenAi API to generate end-of-year school reports for primary school teachers ",
+      image: 'under_construction.png',
+      GitHubFront: 'https://github.com/kieren-mcgill/report-writer-client',
+      GitHubBack: 'https://github.com/kieren-mcgill/report-writer-server',
+      Url: ''
+    },
   {
     title: 'Travelog',
     blurb: "A desktop app the allows user to add, edit, delete and view travel diary entries. Built using vanilla Javascript",

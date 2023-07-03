@@ -12,11 +12,13 @@ const ProjectsCards = ({ projectInfo }) => {
               <h5 className="card-title text-center red-el">{project.title}</h5>
               <p className="card-text text-center">{project.blurb}</p>
             </div>
-            <div className="card-footer d-flex justify-content-around">
+                  <div className="card-footer d-flex justify-content-around">
+              {project.Url !== '' &&
               <a href={project.Url} target="_blank" rel="noopener noreferrer">
                 <i className="fa-solid fa-window-maximize fa-xl m-1 blue-el"></i>
                 <small className="text-muted">Project</small>
               </a>
+              }
               {project.GitHubFront !== '' &&
                 <a href={project.GitHubFront} target="_blank" rel="noopener noreferrer">
                   <i className="fa-brands fa-github fa-xl m-1 blue-el"></i>
